@@ -6,6 +6,7 @@
     box-sizing: border-box;
     list-style: none;
     font-size: 16px;
+    font-family: 'Redacted Script', cursive;
 }
 
 a{
@@ -30,6 +31,21 @@ a{
 .header__nav{
     max-width: 550px;
     width: 100%;
+}
+
+.logo:hover {
+    animation: logo;
+    animation-duration: 1s;
+}
+
+@keyframes logo {
+    to {
+        transform: translatex(600px) translateY(300px) scale(10) rotate(360deg);
+    }
+}
+
+.col {
+    color: #1E266D;
 }
 
 .menu__items{
@@ -441,3 +457,68 @@ a{
     line-height: 27px;
     color: rgba(69, 88, 128, 0.5);
 }
+
+.footer__text-nav {
+    color: black;
+}
+
+/*  animation  */
+
+.btn-blue:hover {
+    animation: btn;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+.btn__hero-wite:hover{
+    animation: btn-white;
+    animation-duration: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.btn__blue:hover {
+    animation: btn-blue;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    transition: .3s;
+}
+
+.footer__text-nav:hover {
+    animation: footer-text;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes btn {
+    to {
+        transform: translate(0, 0);
+        background-color: pink;
+        box-shadow: 2px 3px 2px 0 #ffdfc4;
+        color: black;
+    }
+}
+
+@keyframes btn-white{
+    to {
+        transform: translate(0, 0);
+        background-color: #3751FF;
+        box-shadow: 2px 3px 2px 0 gray;
+        color: white;
+    }
+}
+
+@keyframes btn-blue {
+    to {
+        padding: 17px 50px 17px 31px;
+        background-position: right;
+    }
+}
+
+@keyframes footer-text {
+    to {
+        text-decoration: underline;
+        transform: scale(2);
+    }
+}
+
+/*  animation  */
