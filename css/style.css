@@ -6,7 +6,14 @@
     box-sizing: border-box;
     list-style: none;
     font-size: 16px;
-    font-family: 'Redacted Script', cursive;
+    font-family: Halyard Text Regular;
+}
+
+@font-face {
+    font-family: Halyard Text Regular;
+    src: url(../Halyard/Halyard.ttf);
+    font-style: normal; 
+    font-weight: normal;
 }
 
 @keyframes raimbol {
